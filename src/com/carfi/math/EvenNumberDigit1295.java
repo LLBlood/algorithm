@@ -53,6 +53,18 @@ public class EvenNumberDigit1295 {
         }
         return eventCount;
     }
+    public int findNumbers3(int[] nums) {
+        /**
+         * 统计偶数次数位数   10^k-1<x<10^k
+         */
+        int eventCount = 0;
+        for (int num : nums) {
+            if ((int)(Math.log10(num) + 1) % 2 == 0) {
+                ++eventCount;
+            }
+        }
+        return eventCount;
+    }
 
     private int getCount(int event, int num) {
         event++;
