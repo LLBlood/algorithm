@@ -1,4 +1,4 @@
-package com.carfi.math;
+package com.carfi.math.simple;
 
 /**
  * com.carfi.math$
