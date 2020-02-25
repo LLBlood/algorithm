@@ -1,5 +1,8 @@
 package com.carfi.math.simple;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
 /**
  * com.carfi.math$
  * 1266. 访问所有点的最小时间
@@ -45,5 +48,24 @@ public class AccessMiniTime1266 {
             minTime += Math.abs(absX - absY);
         }
         return minTime;
+
+
+
+    }
+
+    public static void main(String[] args) {
+        String s = formatToNumber(new BigDecimal(1.02182));
+        System.out.println(s);
+    }
+
+    public static String formatToNumber(BigDecimal obj) {
+        DecimalFormat df = new DecimalFormat("#.000");
+        if (obj.compareTo(BigDecimal.ZERO) == 0) {
+            return "0.000";
+        } else if (obj.compareTo(BigDecimal.ZERO) > 0 && obj.compareTo(new BigDecimal(1)) < 0) {
+            return "0"+df.format(obj).toString();
+        } else {
+            return df.format(obj).toString();
+        }
     }
 }
