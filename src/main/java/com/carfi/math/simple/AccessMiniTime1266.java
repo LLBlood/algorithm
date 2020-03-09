@@ -2,6 +2,9 @@ package com.carfi.math.simple;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * com.carfi.math$
@@ -56,6 +59,11 @@ public class AccessMiniTime1266 {
     public static void main(String[] args) {
         String s = formatToNumber(new BigDecimal(1.02182));
         System.out.println(s);
+        Set<String> set = new HashSet<>(Arrays.asList("1111", "1111"));
+        for (String s1 : set) {
+            System.out.println(s1);
+        }
+
     }
 
     public static String formatToNumber(BigDecimal obj) {
