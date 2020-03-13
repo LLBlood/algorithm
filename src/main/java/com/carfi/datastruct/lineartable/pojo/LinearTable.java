@@ -1,5 +1,7 @@
 package com.carfi.datastruct.lineartable.pojo;
 
+import java.util.Arrays;
+
 /**
  * com.carfi.datastruct.lineartable.pojo$
  *
@@ -30,5 +32,17 @@ public class LinearTable {
 
     public void setLength(final int length) {
         this.length = length;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new LinearTable().data.length);
+    }
+
+    @Override
+    public String toString() {
+        return "LinearTable{" +
+                "data=" + Arrays.toString(data) +
+                ", length=" + length +
+                '}';
     }
 }
