@@ -20,13 +20,13 @@ public class LinearTableUtil {
      * @param e 装载e
      * @return int -1无值 1有值
      **/
-    public static int getElem(LinearTable linearTable, int i, Elem e) {
+    public static boolean getElem(LinearTable linearTable, int i, Elem e) {
         //首先判断坐标是否超过限制
         if (linearTable.getLength() == 0 || i < 1 || i > linearTable.getLength()) {
-            return -1;
+            return false;
         }
         e.setValue(linearTable.getData()[i - 1]);
-        return 1;
+        return true;
     }
 
     /**
@@ -43,7 +43,7 @@ public class LinearTableUtil {
      * @param e
      * @return java.lang.Boolean
      **/
-    public static Boolean listInsert(LinearTable linearTable, int i, Elem e) {
+    public static boolean listInsert(LinearTable linearTable, int i, Elem e) {
         if (linearTable.getLength() >= linearTable.getData().length) {
             System.out.println("表长已满");
             return false;
@@ -78,7 +78,7 @@ public class LinearTableUtil {
      * @param e
      * @return java.lang.Boolean
      **/
-    public static Boolean listDelet(LinearTable linearTable, int i, Elem e) {
+    public static boolean listDelet(LinearTable linearTable, int i, Elem e) {
         if (i < 1 || i > linearTable.getLength()) {
             System.out.println("超出删除范围");
             return false;

@@ -5,6 +5,10 @@ import com.carfi.datastruct.lineartable.pojo.LinearTable;
 import com.carfi.datastruct.lineartable.util.LinearTableUtil;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * com.carfi.datastruct.lineartable.test$
  *
@@ -17,7 +21,7 @@ public class TestUtil {
     public void testGetElem() {
         LinearTable linearTable = new LinearTable();
         Elem elem = new Elem();
-        int flag = LinearTableUtil.getElem(linearTable, 5, elem);
+        boolean flag = LinearTableUtil.getElem(linearTable, 5, elem);
         System.out.println(flag);
         System.out.println(elem.getValue());
     }
@@ -46,5 +50,35 @@ public class TestUtil {
         System.out.println(elem.getValue());
     }
 
+    @Test
+    public void test() {
+        Map<String, Elem> map = new HashMap<>();
+        map.put("1", new Elem());
+        Set<Map.Entry<String, Elem>> entries = map.entrySet();
+        for (Map.Entry<String, Elem> entry : entries) {
+            System.out.println(entry.getValue().getValue());
+        }
+
+        Elem elem = map.get("1");
+        elem.setValue(10);
+
+
+        Map<String, Object> newMap = new HashMap<>();
+
+        Set<Map.Entry<String, Elem>> entries2 = map.entrySet();
+        for (Map.Entry<String, Elem> entry : entries2) {
+            System.out.println(entry.getValue().getValue());
+            newMap.put("1", entry.getValue());
+        }
+
+        Elem elem1 = (Elem) newMap.get("1");
+        elem1.setValue(15);
+
+        Set<Map.Entry<String, Elem>> entries1 = map.entrySet();
+        for (Map.Entry<String, Elem> entry : entries1) {
+            System.out.println(entry.getValue().getValue());
+        }
+
+    }
 
 }
