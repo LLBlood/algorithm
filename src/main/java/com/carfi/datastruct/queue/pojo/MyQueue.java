@@ -17,7 +17,7 @@ public class MyQueue {
         return data;
     }
 
-    public void setData(final int[] data) {
+    public void setData(int[] data) {
         this.data = data;
     }
 
@@ -25,7 +25,7 @@ public class MyQueue {
         return front;
     }
 
-    public void setFront(final int front) {
+    public void setFront(int front) {
         this.front = front;
     }
 
@@ -33,7 +33,7 @@ public class MyQueue {
         return rare;
     }
 
-    public void setRare(final int rare) {
+    public void setRare(int rare) {
         this.rare = rare;
     }
 
