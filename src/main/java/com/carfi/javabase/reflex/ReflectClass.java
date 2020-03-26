@@ -1,5 +1,6 @@
 package com.carfi.javabase.reflex;
 
+
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,9 @@ import org.slf4j.LoggerFactory;
  * @date 2020-03-25 11:22:01
  **/
 public class ReflectClass {
-    private static final Logger log = LoggerFactory.getLogger(com.carfi.javabase.reflex.ReflectClass.class);
+
+    private static final Logger log = LoggerFactory.getLogger(ReflectClass.class);
+
     static {
         log.debug("hello world");
     }
