@@ -3,8 +3,7 @@ package com.carfi.math.simple;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 /**
  * com.carfi.math$
@@ -57,13 +56,21 @@ public class AccessMiniTime1266 {
     }
 
     public static void main(String[] args) {
-        String s = formatToNumber(new BigDecimal(1.02182));
-        System.out.println(s);
-        Set<String> set = new HashSet<>(Arrays.asList("1111", "1111"));
-        for (String s1 : set) {
-            System.out.println(s1);
-        }
-
+//        String s = formatToNumber(new BigDecimal(1.02182));
+//        System.out.println(s);
+//        Set<String> set = new HashSet<>(Arrays.asList("1111", "1111"));
+//        for (String s1 : set) {
+//            System.out.println(s1);
+//        }
+//        Integer a = 2001;
+//        Integer b = 2001;
+//
+//        System.out.println(a == b);
+        List<Integer> list = Arrays.asList(2002, 2003, 2004);
+        List<Integer> integers = list.subList(0, 2);
+        System.out.println(integers);
+        List<Integer> temp = list.subList(2, list.size());
+        System.out.println(temp);
     }
 
     public static String formatToNumber(BigDecimal obj) {
