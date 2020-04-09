@@ -20,8 +20,23 @@ public class BinaryUtilTest {
     }
 
     public static void main(String[] args) {
-        BinaryTree b = new BinaryTree();
-        b = BinaryTreeUtil.createBinaryTree(b);
+        BinaryTree b = BinaryTreeUtil.initBinaryTree();
         System.out.println(b.toString());
+        //前序遍历
+        System.out.println("前序遍历================>开始");
+        BinaryTreeUtil.preOrderTraversal(b);
+        System.out.println("前序遍历================>结束");
+        //中序遍历
+        System.out.println("中序遍历================>开始");
+        BinaryTreeUtil.inOrderTraversal(b);
+        System.out.println("中序遍历================>结束");
+        //后序遍历
+        System.out.println("后序遍历================>开始");
+        BinaryTreeUtil.postOrderTraversal(b);
+        System.out.println("后序遍历================>结束");
+        //层序遍历
+        System.out.println("层序遍历================>开始");
+        BinaryTreeUtil.levelTraversal(b);
+        System.out.println("层序遍历================>结束");
     }
 }
