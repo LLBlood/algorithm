@@ -4,6 +4,9 @@ import com.carfi.datastruct.binarytree.pojo.BinaryTree;
 import com.carfi.datastruct.binarytree.util.BinaryTreeUtil;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * com.carfi.datastruct.binarytree.test$
  *
@@ -16,7 +19,21 @@ public class BinaryUtilTest {
 //        BinaryTree b = new BinaryTree();
 //        b = BinaryTreeUtil.createBinaryTree(b);
 //        System.out.println(b.toString());
-
+//        Date date = new Date();
+//        Calendar instance = Calendar.getInstance();
+//        instance.setTime(date);
+//        instance.set(Calendar.DAY_OF_MONTH, 0);
+//        int i = instance.get(Calendar.DAY_OF_MONTH);
+//        System.out.println(i);
+        List<Double> alarmPercentList = new ArrayList<Double>() {
+            {
+                add(0.8);
+                add(0.9);
+                add(0.95);
+                add(1.0);
+            }
+        };
+        System.out.println(alarmPercentList);
     }
 
     public static void main(String[] args) {
