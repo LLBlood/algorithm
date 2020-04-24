@@ -1,0 +1,4 @@
+1、socket中的accept会等待新的客户端进行连接，如果没有会堵塞
+2、socket中的stream read方法会一直读取数据
+3、socket中的stream需要设置中断标记，才能跳出阻塞
+4、设置中断标记，可以使用socket.shutdownOutput和shutdownInput，也可以使用socket.close，也可以使用printWrite中的println,也可以自定义发送内容
