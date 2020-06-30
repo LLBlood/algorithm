@@ -2,7 +2,7 @@ package com.carfi.math.simple;
 
 /**
  * com.carfi.math.simple$
- *
+ * 二进制数相加
  * @author ll
  * @date 2020-06-23 14:55:13
  **/
