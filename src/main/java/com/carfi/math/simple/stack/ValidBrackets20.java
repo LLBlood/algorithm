@@ -1,4 +1,4 @@
-package com.carfi.math.simple;
+package com.carfi.math.simple.stack;
 
 import java.util.Stack;
 

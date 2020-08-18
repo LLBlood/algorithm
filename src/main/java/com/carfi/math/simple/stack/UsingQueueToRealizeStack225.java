@@ -1,4 +1,4 @@
-package com.carfi.math.stack;
+package com.carfi.math.simple.stack;
 
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
