@@ -4,17 +4,17 @@ import java.util.Stack;
 
 /**
  * com.carfi.math.simple$
- *
+ * 155. 最小栈
  * @author ll
  * @date 2020-08-14 15:43:32
  **/
-public class MinStack {
+public class MinStack155 {
     //一个栈放入数据
     private Stack<Integer> dateStack;
     private Stack<Integer> minStack;
     //一个栈用来存储最小值
     /** initialize your data structure here. */
-    public MinStack() {
+    public MinStack155() {
         dateStack = new Stack<>();
         minStack = new Stack<>();
     }
