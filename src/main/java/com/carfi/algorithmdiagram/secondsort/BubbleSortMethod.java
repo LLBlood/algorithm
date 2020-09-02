@@ -1,4 +1,4 @@
-package com.carfi.algorithmdiagram.firstofinfo;
+package com.carfi.algorithmdiagram.secondsort;
 
 /**
  * com.carfi.algorithmdiagram.firstofinfo$
