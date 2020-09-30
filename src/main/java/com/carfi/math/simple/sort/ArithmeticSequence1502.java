@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * com.carfi.math.simple.sort$
- * 1528. 重新排列字符串
+ * 1502. 判断能否形成等差数列
  * @author ll
  * @date 2020-09-30 14:48:35
  **/
