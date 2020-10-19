@@ -1,9 +1,9 @@
-package com.carfi.thread;
+package com.carfi.math.thread;
 
 import java.util.concurrent.Semaphore;
 
 /**
- * com.carfi.thread$
+ * com.carfi.math.thread$
  *
  * @author ll
  * @date 2020-10-19 14:17:21
